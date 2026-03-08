@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <!-- Meta Pixel Code -->
+<head><!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -20,787 +19,312 @@ src="https://www.facebook.com/tr?id=1772488060090716&ev=PageView&noscript=1"
 <!-- End Meta Pixel Code -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acewin247 | Premium Gaming Platform</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Tanvi Enterprises - WhatsApp</title>
     <style>
-        :root {
-            --primary-purple: #6a11cb;
-            --secondary-purple: #8a2be2;
-            --light-purple: #b19cd9;
-            --accent-gold: #ffd700;
-            --dark-bg: #0f0c29;
-            --light-bg: #f9f7fe;
-            --text-dark: #333;
-            --text-light: #fff;
-            --success-green: #4CAF50;
-            --warning-red: #f44336;
-            --shadow: 0 10px 30px rgba(106, 17, 203, 0.15);
-        }
-
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-
+        
         body {
-            background-color: var(--light-bg);
-            color: var(--text-dark);
-            overflow-x: hidden;
-            line-height: 1.6;
-            padding-bottom: 100px; /* Space for curved footer */
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        /* Curved Header */
-        .curved-header {
-            background: linear-gradient(135deg, var(--primary-purple) 0%, var(--secondary-purple) 100%);
-            border-radius: 0 0 40% 40%;
-            padding: 20px 0 80px;
-            position: relative;
-            box-shadow: var(--shadow);
-        }
-
-        .header-content {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background: #fff;
+            min-height: 100vh;
             display: flex;
+            flex-direction: column;
+        }
+        
+        /* Header */
+        .header {
+            display: flex;
+            align-items: center;
             justify-content: space-between;
-            align-items: center;
-            padding: 0 20px;
+            padding: 12px 16px;
+            border-bottom: 1px solid #e0e0e0;
         }
-
-        .logo-container {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-        }
-
+        
         .logo {
-            height: 50px;
-            width: auto;
-            filter: drop-shadow(0 2px 5px rgba(0,0,0,0.2));
-        }
-
-        .site-name {
-            font-size: 1.8rem;
-            font-weight: 800;
-            color: var(--text-light);
-            letter-spacing: 1px;
-        }
-
-        .open-site-btn {
-            background-color: var(--accent-gold);
-            color: var(--text-dark);
-            border: none;
-            padding: 12px 28px;
-            border-radius: 50px;
-            font-weight: 700;
-            font-size: 1rem;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            box-shadow: 0 5px 15px rgba(255, 215, 0, 0.3);
             display: flex;
             align-items: center;
             gap: 8px;
-            white-space: nowrap;
-        }
-
-        .open-site-btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 20px rgba(255, 215, 0, 0.4);
-        }
-
-        /* Language Toggle */
-        .language-toggle {
-            position: absolute;
-            top: 30px;
-            right: 20px;
-            display: flex;
-            background: rgba(255, 255, 255, 0.15);
-            border-radius: 50px;
-            padding: 5px;
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-        }
-
-        .lang-btn {
-            background: transparent;
-            border: none;
-            color: var(--text-light);
-            padding: 8px 20px;
-            border-radius: 50px;
-            cursor: pointer;
+            color: #25d366;
             font-weight: 600;
-            transition: all 0.3s ease;
-            white-space: nowrap;
-        }
-
-        .lang-btn.active {
-            background-color: var(--accent-gold);
-            color: var(--text-dark);
-        }
-
-        /* Main Content */
-        .main-content {
-            padding: 40px 0 100px;
-        }
-
-        .intro-section {
-            text-align: center;
-            margin-bottom: 60px;
-            padding: 0 20px;
-        }
-
-        .intro-title {
-            font-size: 2.5rem;
-            color: var(--primary-purple);
-            margin-bottom: 20px;
-            font-weight: 800;
-            line-height: 1.2;
-        }
-
-        .intro-text {
-            font-size: 1.2rem;
-            max-width: 800px;
-            margin: 0 auto 30px;
-            color: #555;
-        }
-
-        .games-showcase {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            flex-wrap: wrap;
-            margin-top: 40px;
-        }
-
-        .game-icon {
-            background: white;
-            border-radius: 20px;
-            padding: 20px 30px;
-            box-shadow: var(--shadow);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            transition: transform 0.3s ease;
-            min-width: 120px;
-        }
-
-        .game-icon:hover {
-            transform: translateY(-10px);
-        }
-
-        .game-icon i {
-            font-size: 2.5rem;
-            color: var(--primary-purple);
-            margin-bottom: 10px;
-        }
-
-        /* Guide Section */
-        .guide-section {
-            background-color: white;
-            border-radius: 25px;
-            padding: 40px;
-            box-shadow: var(--shadow);
-            margin-top: 40px;
-        }
-
-        .section-title {
-            color: var(--primary-purple);
-            font-size: 2rem;
-            margin-bottom: 30px;
-            text-align: center;
-            font-weight: 800;
-            line-height: 1.2;
-        }
-
-        .guide-step {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-bottom: 50px;
-        }
-
-        .guide-text {
-            font-size: 1.2rem;
-            margin-bottom: 20px;
-            text-align: center;
-            padding: 0 20px;
-        }
-
-        .guide-image {
-            max-width: 100%;
-            border-radius: 15px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            border: 3px solid var(--light-purple);
-            transition: transform 0.3s ease;
-        }
-
-        .guide-image:hover {
-            transform: scale(1.02);
-        }
-
-        .step-number {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 40px;
-            height: 40px;
-            background-color: var(--primary-purple);
-            color: white;
-            border-radius: 50%;
-            font-weight: bold;
-            margin-bottom: 15px;
-        }
-
-        /* CURVED Footer */
-        .curved-footer {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: linear-gradient(to right, var(--primary-purple), var(--secondary-purple));
-            padding: 25px 0 40px;
-            border-radius: 40% 40% 0 0;
-            box-shadow: 0 -10px 30px rgba(106, 17, 203, 0.3);
-            z-index: 100;
-        }
-
-        .footer-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0 20px;
-            flex-wrap: wrap;
-            gap: 15px;
-        }
-
-        .official-site-btn {
-            background-color: var(--accent-gold);
-            color: var(--text-dark);
-            border: none;
-            padding: 15px 35px;
-            border-radius: 50px;
-            font-weight: 800;
-            font-size: 1.1rem;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            box-shadow: 0 5px 15px rgba(255, 215, 0, 0.3);
-            white-space: nowrap;
-        }
-
-        .official-site-btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 20px rgba(255, 215, 0, 0.4);
-        }
-
-        .subtext {
-            color: var(--text-light);
-            font-size: 0.9rem;
-            opacity: 0.9;
-            text-align: right;
-            flex: 1;
-            min-width: 200px;
-        }
-
-        /* Language-specific content */
-        .lang-content {
-            display: none;
-        }
-
-        .lang-content.active {
-            display: block;
-            animation: fadeIn 0.5s ease;
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-
-        /* ================= MOBILE OPTIMIZATIONS ================= */
-        @media (max-width: 768px) {
-            body {
-                padding-bottom: 90px;
-            }
-            
-            .curved-header {
-                border-radius: 0 0 30% 30%;
-                padding: 15px 0 60px;
-            }
-            
-            .header-content {
-                flex-direction: column;
-                gap: 15px;
-                padding-top: 10px;
-                align-items: stretch;
-            }
-            
-            .logo-container {
-                justify-content: center;
-                text-align: center;
-            }
-            
-            .logo {
-                height: 40px;
-            }
-            
-            .site-name {
-                font-size: 1.5rem;
-            }
-            
-            .open-site-btn {
-                padding: 10px 20px;
-                font-size: 0.9rem;
-                justify-content: center;
-                width: 100%;
-                max-width: 250px;
-                margin: 0 auto;
-            }
-            
-            .language-toggle {
-                position: relative;
-                top: 0;
-                right: 0;
-                margin-top: 15px;
-                justify-content: center;
-                width: 100%;
-            }
-            
-            .lang-btn {
-                padding: 8px 25px;
-                font-size: 0.9rem;
-            }
-            
-            .main-content {
-                padding: 30px 0 80px;
-            }
-            
-            .intro-title {
-                font-size: 1.8rem;
-                margin-bottom: 15px;
-            }
-            
-            .intro-text {
-                font-size: 1rem;
-                padding: 0 10px;
-            }
-            
-            .games-showcase {
-                gap: 15px;
-                margin-top: 30px;
-            }
-            
-            .game-icon {
-                padding: 15px 20px;
-                min-width: 100px;
-                flex: 1;
-                max-width: calc(50% - 15px);
-            }
-            
-            .game-icon i {
-                font-size: 2rem;
-            }
-            
-            .guide-section {
-                padding: 25px 20px;
-                margin-top: 30px;
-                border-radius: 20px;
-            }
-            
-            .section-title {
-                font-size: 1.6rem;
-                margin-bottom: 20px;
-            }
-            
-            .guide-step {
-                margin-bottom: 40px;
-            }
-            
-            .guide-text {
-                font-size: 1rem;
-                padding: 0 10px;
-                margin-bottom: 15px;
-            }
-            
-            .step-number {
-                width: 35px;
-                height: 35px;
-                font-size: 0.9rem;
-            }
-            
-            /* CURVED FOOTER MOBILE */
-            .curved-footer {
-                padding: 20px 0 35px;
-                border-radius: 30% 30% 0 0;
-            }
-            
-            .footer-content {
-                flex-direction: column;
-                gap: 10px;
-                text-align: center;
-                padding: 0 15px;
-            }
-            
-            .official-site-btn {
-                padding: 12px 25px;
-                font-size: 1rem;
-                width: 100%;
-                max-width: 280px;
-                justify-content: center;
-            }
-            
-            .subtext {
-                text-align: center;
-                font-size: 0.85rem;
-                min-width: auto;
-                margin-top: 5px;
-            }
-        }
-
-        /* Extra Small Mobile Optimization */
-        @media (max-width: 480px) {
-            .curved-header {
-                border-radius: 0 0 25% 25%;
-                padding-bottom: 50px;
-            }
-            
-            .intro-title {
-                font-size: 1.6rem;
-            }
-            
-            .game-icon {
-                max-width: calc(50% - 10px);
-                padding: 12px 15px;
-                min-width: auto;
-            }
-            
-            .game-icon i {
-                font-size: 1.8rem;
-            }
-            
-            .guide-section {
-                padding: 20px 15px;
-            }
-            
-            .section-title {
-                font-size: 1.4rem;
-            }
-            
-            .curved-footer {
-                border-radius: 25% 25% 0 0;
-                padding: 15px 0 30px;
-            }
-            
-            .official-site-btn {
-                padding: 10px 20px;
-                font-size: 0.95rem;
-            }
-        }
-
-        /* Performance optimizations */
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-
-        .preload-image {
-            display: none;
+            font-size: 20px;
         }
         
-        /* Prevent text overflow on very small screens */
-        @media (max-width: 360px) {
-            .site-name {
-                font-size: 1.3rem;
-            }
-            
-            .intro-title {
-                font-size: 1.4rem;
-            }
-            
-            .game-icon {
-                font-size: 0.9rem;
-                padding: 10px 12px;
-            }
-            
-            .game-icon i {
-                font-size: 1.5rem;
-            }
+        .logo svg {
+            width: 28px;
+            height: 28px;
+        }
+        
+        .download-btn {
+            background: #25d366;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        
+        /* Main Content */
+        .main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        
+        .business-name {
+            font-size: 24px;
+            font-weight: 600;
+            color: #111;
+            margin-bottom: 24px;
+        }
+        
+        .message-box {
+            background: #f5f5f5;
+            border-radius: 16px;
+            padding: 16px 20px;
+            max-width: 320px;
+            width: 100%;
+            margin-bottom: 24px;
+            text-align: left;
+        }
+        
+        .message-text {
+            color: #5e5e5e;
+            font-size: 16px;
+            line-height: 1.4;
+        }
+        
+        .open-btn {
+            background: #25d366;
+            color: white;
+            border: none;
+            padding: 14px 48px;
+            border-radius: 24px;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            width: 100%;
+            max-width: 280px;
+            margin-bottom: 16px;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .countdown {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 16px;
+        }
+        
+        .countdown span {
+            color: #25d366;
+            font-weight: 600;
+        }
+        
+        .no-app {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            color: #111;
+            font-size: 15px;
+        }
+        
+        .wa-icon-small {
+            width: 20px;
+            height: 20px;
+            background: #25d366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .wa-icon-small svg {
+            width: 12px;
+            height: 12px;
+            fill: white;
+        }
+        
+        .download-link {
+            color: #25d366;
+            text-decoration: underline;
+            text-underline-offset: 4px;
+        }
+        
+        /* Footer */
+        .footer {
+            background: #111b21;
+            color: white;
+            padding: 32px 20px;
+            text-align: center;
+        }
+        
+        .download-footer-btn {
+            background: #25d366;
+            color: white;
+            border: none;
+            padding: 12px 32px;
+            border-radius: 24px;
+            font-size: 15px;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 24px;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+        
+        .social-links a {
+            width: 40px;
+            height: 40px;
+            border: 1px solid rgba(255,255,255,0.3);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-decoration: none;
+        }
+        
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            margin-bottom: 20px;
+            color: white;
+            font-size: 18px;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            font-size: 13px;
+            color: rgba(255,255,255,0.7);
+        }
+        
+        .copyright {
+            margin-top: 20px;
+            font-size: 12px;
+            color: rgba(255,255,255,0.5);
         }
     </style>
 </head>
 <body>
-    <!-- Preload images for faster loading -->
-    <div class="preload-image">
-        <img src="https://assets3.hurry2.com/site_logo/acewin247.png" alt="Preload logo">
-        <img src="https://d1yei2z3i6k35z.cloudfront.net/13184094/6968113a6df4f_Screenshot2026-01-15032051.png" alt="Preload step 1">
-        <img src="https://d1yei2z3i6k35z.cloudfront.net/13184094/69681143c93a5_Screenshot2026-01-15032406.png" alt="Preload step 2">
-        <img src="https://d1yei2z3i6k35z.cloudfront.net/13184094/696811515346a_Screenshot2026-01-15032614.png" alt="Preload step 3">
+    <!-- Header -->
+    <div class="header">
+        <div class="logo">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413"/>
+            </svg>
+            WhatsApp
+        </div>
+        <button class="download-btn" onclick="window.open('https://whatsapp.com/dl', '_blank')">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                <path d="M8.75 2a.75.75 0 00-1.5 0v7.54L3.19 5.51a.75.75 0 10-1.06 1.06l5.33 5.29a.75.75 0 001.06 0l5.34-5.29a.75.75 0 00-1.06-1.06L8.75 9.54V2z"/>
+                <path d="M3 13.25a.75.75 0 000 1.5h10a.75.75 0 000-1.5H3z"/>
+            </svg>
+            Download
+        </button>
     </div>
 
-    <!-- Curved Header -->
-    <header class="curved-header">
-        <div class="container">
-            <div class="header-content">
-                <div class="logo-container">
-                    <img src="https://assets3.hurry2.com/site_logo/acewin247.png" alt="Acewin247 Logo" class="logo">
-                    <div class="site-name">Acewin247</div>
-                </div>
-                <button class="open-site-btn" id="openSiteBtn">
-                    <i class="fas fa-external-link-alt"></i>
-                    Acewin247.club
-                </button>
-            </div>
-            
-            <!-- Language Toggle -->
-            <div class="language-toggle">
-                <button class="lang-btn active" data-lang="en">ENG</button>
-                <button class="lang-btn" data-lang="hi">हिंदी</button>
-            </div>
-        </div>
-    </header>
-
     <!-- Main Content -->
-    <main class="main-content">
-        <div class="container">
-            <!-- Intro Section -->
-            <section class="intro-section">
-                <h1 class="intro-title">Ultimate Gaming Experience</h1>
-                <p class="intro-text" id="introText">This is a premium gaming site featuring all your favorite games like cricket, football, tennis, casino games, and more. Join thousands of players for an unmatched gaming experience with exciting rewards and tournaments.</p>
-                
-                <div class="games-showcase">
-                    <div class="game-icon">
-                        <i class="fas fa-baseball-ball"></i>
-                        <span>Cricket</span>
-                    </div>
-                    <div class="game-icon">
-                        <i class="fas fa-futbol"></i>
-                        <span>Football</span>
-                    </div>
-                    <div class="game-icon">
-                        <i class="fas fa-table-tennis"></i>
-                        <span>Tennis</span>
-                    </div>
-                    <div class="game-icon">
-                        <i class="fas fa-basketball-ball"></i>
-                        <span>Basketball</span>
-                    </div>
-                    <div class="game-icon">
-                        <i class="fas fa-dice"></i>
-                        <span>Casino</span>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Guide Section -->
-            <section class="guide-section">
-                <h2 class="section-title" id="guideTitle">Guide for New Users</h2>
-                
-                <!-- English Guide Content -->
-                <div class="lang-content active" id="guide-en">
-                    <!-- Step 1 -->
-                    <div class="guide-step">
-                        <div class="step-number">1</div>
-                        <p class="guide-text">Open Official site and click on signup [Look at the green and red arrows in this image]</p>
-                        <img src="https://d1yei2z3i6k35z.cloudfront.net/13184094/6968113a6df4f_Screenshot2026-01-15032051.png" alt="Step 1: Signup Guide" class="guide-image">
-                    </div>
-                    
-                    <!-- Step 2 -->
-                    <div class="guide-step">
-                        <div class="step-number">2</div>
-                        <p class="guide-text">Step 2 of creating account: Enter mobile number and click Get OTP [Enter number in red arrow area and click Get OTP with yellow arrow]</p>
-                        <img src="https://d1yei2z3i6k35z.cloudfront.net/13184094/69681143c93a5_Screenshot2026-01-15032406.png" alt="Step 2: OTP Guide" class="guide-image">
-                    </div>
-                    
-                    <!-- Step 3 -->
-                    <div class="guide-step">
-                        <div class="step-number">3</div>
-                        <p class="guide-text">Last step: Enter OTP, create password, confirm it, then click on Registration. You're done!</p>
-                        <img src="https://d1yei2z3i6k35z.cloudfront.net/13184094/696811515346a_Screenshot2026-01-15032614.png" alt="Step 3: Registration Guide" class="guide-image">
-                    </div>
-                </div>
-                
-                <!-- Hindi Guide Content -->
-                <div class="lang-content" id="guide-hi">
-                    <!-- Step 1 in Hindi -->
-                    <div class="guide-step">
-                        <div class="step-number">१</div>
-                        <p class="guide-text">ऑफिशियल साइट खोलें और साइन अप पर क्लिक करें [इस छवि में हरे और लाल तीर देखें]</p>
-                        <img src="https://d1yei2z3i6k35z.cloudfront.net/13184094/6968113a6df4f_Screenshot2026-01-15032051.png" alt="चरण 1: साइनअप मार्गदर्शिका" class="guide-image">
-                    </div>
-                    
-                    <!-- Step 2 in Hindi -->
-                    <div class="guide-step">
-                        <div class="step-number">२</div>
-                        <p class="guide-text">खाता बनाने का चरण 2: मोबाइल नंबर दर्ज करें और OTP प्राप्त करें पर क्लिक करें [लाल तीर क्षेत्र में नंबर दर्ज करें और पीले तीर के साथ OTP प्राप्त करें पर क्लिक करें]</p>
-                        <img src="https://d1yei2z3i6k35z.cloudfront.net/13184094/69681143c93a5_Screenshot2026-01-15032406.png" alt="चरण 2: OTP मार्गदर्शिका" class="guide-image">
-                    </div>
-                    
-                    <!-- Step 3 in Hindi -->
-                    <div class="guide-step">
-                        <div class="step-number">३</div>
-                        <p class="guide-text">अंतिम चरण: OTP दर्ज करें, पासवर्ड बनाएं, उसकी पुष्टि करें, फिर रजिस्ट्रेशन पर क्लिक करें। आपका काम पूरा!</p>
-                        <img src="https://d1yei2z3i6k35z.cloudfront.net/13184094/696811515346a_Screenshot2026-01-15032614.png" alt="चरण 3: पंजीकरण मार्गदर्शिका" class="guide-image">
-                    </div>
-                </div>
-            </section>
+    <div class="main">
+        <h1 class="business-name">Tanvi Enterprises</h1>
+        
+        <div class="message-box">
+            <p class="message-text">I want Id : )</p>
         </div>
-    </main>
-
-    <!-- CURVED Fixed Footer Bar -->
-    <footer class="curved-footer">
-        <div class="container">
-            <div class="footer-content">
-                <button class="official-site-btn" id="officialSiteBtn">
-                    Go To Official Site ↗
-                </button>
-                <div class="subtext">
-                    Signup and play to win exciting rewards!
-                </div>
+        
+        <div class="countdown">
+            Opening WhatsApp in <span id="timer">3</span> seconds...
+        </div>
+        
+        <a href="https://wa.me/447476691322?text=I%20want%20Id%20%3A%20%29" class="open-btn" id="openLink">
+            Open app
+        </a>
+        
+        <div class="no-app">
+            <div class="wa-icon-small">
+                <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413"/></svg>
             </div>
+            <span>Don't have the app?</span>
+            <a href="https://whatsapp.com/dl" class="download-link" target="_blank">Download it now</a>
         </div>
-    </footer>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <button class="download-footer-btn" onclick="window.open('https://whatsapp.com/dl', '_blank')">
+            Download
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                <path d="M8.75 2a.75.75 0 00-1.5 0v7.54L3.19 5.51a.75.75 0 10-1.06 1.06l5.33 5.29a.75.75 0 001.06 0l5.34-5.29a.75.75 0 00-1.06-1.06L8.75 9.54V2z"/>
+                <path d="M3 13.25a.75.75 0 000 1.5h10a.75.75 0 000-1.5H3z"/>
+            </svg>
+        </button>
+        
+        <div class="social-links">
+            <a href="https://x.com/whatsapp" target="_blank">𝕏</a>
+            <a href="https://youtube.com/whatsapp" target="_blank">▶</a>
+            <a href="https://instagram.com/whatsapp" target="_blank">📷</a>
+            <a href="https://facebook.com/whatsapp" target="_blank">f</a>
+        </div>
+        
+        <div class="footer-logo">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413"/>
+            </svg>
+            WhatsApp
+        </div>
+        
+        <div class="footer-links">
+            <span>What we do</span>
+            <span>Who we are</span>
+        </div>
+        
+        <div class="copyright">2026 © WhatsApp LLC</div>
+    </div>
 
     <script>
-        // Preload functionality for faster loading
-        document.addEventListener('DOMContentLoaded', function() {
-            // Language toggle functionality
-            const langButtons = document.querySelectorAll('.lang-btn');
-            const langContents = document.querySelectorAll('.lang-content');
-            const introText = document.getElementById('introText');
-            const guideTitle = document.getElementById('guideTitle');
-            const subtextElement = document.querySelector('.subtext');
+        // Auto-redirect countdown
+        let seconds = 3;
+        const timerElement = document.getElementById('timer');
+        const waLink = 'https://wa.me/447476691322?text=I%20want%20Id%20%3A%20%29';
+        
+        const countdown = setInterval(() => {
+            seconds--;
+            timerElement.textContent = seconds;
             
-            // English content
-            const englishContent = {
-                intro: "This is a premium gaming site featuring all your favorite games like cricket, football, tennis, casino games, and more. Join thousands of players for an unmatched gaming experience with exciting rewards and tournaments.",
-                guideTitle: "Guide for New Users",
-                footerSubtext: "Signup and play to win exciting rewards!"
-            };
-            
-            // Hindi content
-            const hindiContent = {
-                intro: "यह एक प्रीमियम गेमिंग साइट है जिसमें आपके सभी पसंदीदा गेम जैसे क्रिकेट, फुटबॉल, टेनिस, कैसीनो गेम और बहुत कुछ शामिल हैं। रोमांचक पुरस्कार और टूर्नामेंट के साथ अद्वितीय गेमिंग अनुभव के लिए हजारों खिलाड़ियों से जुड़ें।",
-                guideTitle: "नए उपयोगकर्ताओं के लिए मार्गदर्शिका",
-                footerSubtext: "साइन अप करें और रोमांचक पुरस्कार जीतने के लिए खेलें!"
-            };
-            
-            langButtons.forEach(button => {
-                button.addEventListener('click', function() {
-                    // Update active language button
-                    langButtons.forEach(btn => btn.classList.remove('active'));
-                    this.classList.add('active');
-                    
-                    const selectedLang = this.getAttribute('data-lang');
-                    
-                    // Show selected language content
-                    langContents.forEach(content => {
-                        content.classList.remove('active');
-                        if (content.id === `guide-${selectedLang}`) {
-                            content.classList.add('active');
-                        }
-                    });
-                    
-                    // Update text content based on language
-                    if (selectedLang === 'en') {
-                        introText.textContent = englishContent.intro;
-                        guideTitle.textContent = englishContent.guideTitle;
-                        subtextElement.textContent = englishContent.footerSubtext;
-                    } else if (selectedLang === 'hi') {
-                        introText.textContent = hindiContent.intro;
-                        guideTitle.textContent = hindiContent.guideTitle;
-                        subtextElement.textContent = hindiContent.footerSubtext;
-                    }
-                });
-            });
-            
-            // Button click handlers
-            document.getElementById('openSiteBtn').addEventListener('click', function() {
-                window.open('https://acewin247.club', '_blank');
-            });
-            
-            document.getElementById('officialSiteBtn').addEventListener('click', function() {
-                window.open('https://acewin247.club', '_blank');
-            });
-            
-            // Lazy loading for images
-            document.querySelectorAll('img').forEach(img => {
-                img.setAttribute('loading', 'lazy');
-            });
-            
-            // Mobile-specific optimizations
-            function checkMobileView() {
-                const isMobile = window.innerWidth <= 768;
-                
-                // Adjust footer curve for mobile
-                const footer = document.querySelector('.curved-footer');
-                if (isMobile) {
-                    // On mobile, reduce the curve radius
-                    footer.style.borderRadius = "30% 30% 0 0";
-                } else {
-                    footer.style.borderRadius = "40% 40% 0 0";
-                }
+            if (seconds <= 0) {
+                clearInterval(countdown);
+                window.location.href = waLink;
             }
-            
-            // Check on load and resize
-            checkMobileView();
-            window.addEventListener('resize', checkMobileView);
-            
-            // Improve mobile touch experience
-            document.querySelectorAll('button').forEach(button => {
-                button.addEventListener('touchstart', function() {
-                    this.style.transform = 'scale(0.98)';
-                });
-                
-                button.addEventListener('touchend', function() {
-                    this.style.transform = '';
-                });
-            });
+        }, 1000);
+        
+        // Manual click handler
+        document.getElementById('openLink').addEventListener('click', (e) => {
+            e.preventDefault();
+            window.location.href = waLink;
         });
     </script>
 </body>
 </html>
-<!-- WhatsApp Floating Button -->
-<a href="https://wa.me/447449706853?text=I%20Want%20ID..!!"
-   class="whatsapp-float"
-   target="_blank"
-   title="Chat on WhatsApp">
-   <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
-</a>
-
-<style>
-.whatsapp-float{
-    position: fixed;
-    width:60px;
-    height:60px;
-    bottom:25px;
-    right:25px; /* 👉 LEFT chahiye to right hata ke left:25px; kar do */
-    background:#25D366;
-    border-radius:50%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    box-shadow:0 0 20px rgba(37,211,102,0.7);
-    z-index:9999;
-    animation:pulse 1.8s infinite;
-}
-
-.whatsapp-float img{
-    width:34px;
-    height:34px;
-}
-
-@keyframes pulse{
-    0%{box-shadow:0 0 0 0 rgba(37,211,102,.7);}
-    70%{box-shadow:0 0 0 20px rgba(37,211,102,0);}
-    100%{box-shadow:0 0 0 0 rgba(37,211,102,0);}
-}
-</style>
